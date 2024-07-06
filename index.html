@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="">
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="esraa fahmy">
+  <meta name="keywords" content="clothes , watches">
+  <meta name="description" content=" website for clothes">
+
+  <!-- ============================================================================ -->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  
+  <!-- ============================================================================ -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-storage-compat.js"></script>
+
+    
+</head>
+
+<body>
+  
+
+<section class="container first">
+
+  <div class="content">
+    <h2>cruds</h2>
+    <p>product management system </p>
+  </div>
+
+
+
+  <div class="  text-white  Cinput">
+    <input placeholder="title" type="text" class="title">
+    <div class="inPrice ">
+      <input  onkeyup=" getTotal()" placeholder="price" type=" number" id="price" >
+      <input  onkeyup=" getTotal()" placeholder="taxes" type="number" id="taxes">
+      <input onkeyup=" getTotal()" placeholder="ads" type="number" id="ads" >
+      <input onkeyup=" getTotal()" placeholder="discount" type="number" id="discount" >
+      <small class=" w-auto" id="smal">  </small>
+    </div>
+    <input placeholder="count" type="number" class="count">
+
+    <input placeholder="category" type="text" class="category">
+
+    <button class="create ">create</button>
+
+
+  </div>
+
+  <div class="scrc">
+    <input onkeyup="searchInput(this.value)" id="search" placeholder="search" type=" number">
+    <div class="btnSearch">
+      <button onclick="moodSearch(this.id)" id="searchTitle" >search by title</button>
+      <button onclick="moodSearch(this.id)" id="searchCategory">search by category</button>
+    </div>
+  </div>
+
+  <div class="deleteAllBtn hideBtn "  >
+    <button  >delete all (
+      <span id="btnCount"></span>
+      )
+    </button>
+  
+
+  </div>
+
+  <div class=" tab  text-white">
+      <table class=" ">
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>count</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+
+        <tbody id='bodyTable'>
+          <!-- <tr>
+            <td>hhhhhh</td>
+            <td>kkkkkhhh</td>
+            <td>lllllhh</td>
+            <td>ooooohh</td>
+            <td>pppphhh</td>
+            <td>ddddhh</td>
+            <td>rrrrrhhh</td>
+            <td>rrrrrhhh</td>
+
+            <td><button class="upd text-center">update</button></td>
+            <td><button class="del">delete</button></td>
+
+          </tr> -->
+        </tbody>
+        
+      </table>
+  </div>
+</section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- js -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+ 

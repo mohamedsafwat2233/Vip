@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(31, 31, 57);
+    
+}
+.content{
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    text-transform: uppercase;
+
+}
+.first input{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    border-radius:4px ;
+    padding: 5px;
+}
+.inPrice{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 15px;
+}
+.inPrice small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 163, 114);
+    width: 50%;
+}
+.inPrice small::before{
+    content: "Total: ";
+    margin-right: 5px;
+}
+.first input:focus{
+    transform: scale(1.1);
+    background-color: rgb(180, 172, 172);
+}
+
+.Cinput button , .deleteAllBtn button{
+    width: 100%;
+    border: none;
+    border-radius:3px ;
+    background-color: rgb(128, 128, 228);
+    margin: 4px 0;
+    color: black;
+    text-transform: capitalize;
+    padding: 5px;
+    transition: all 0.5s;
+
+}
+
+.btnSearch{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10%;
+}
+
+.btnSearch button {
+    border: none;
+    border-radius:10px ;
+    background-color: rgb(128, 128, 228);
+    margin: 4px 0;
+    color: black;
+    text-transform: capitalize;
+    padding: 5px;
+    transition: all 0.5s;
+    /* text-transform: lowercase; */
+
+}
+
+.Cinput button:hover ,.scrc button:hover{
+    background-color: rgb(159, 159, 232) ;
+    letter-spacing: 0.9px;
+}
+.tab table{
+    /* width: 100%; */
+    text-align: center;
+    margin: 15px 0;
+}
+.tab table th{
+    text-transform: uppercase;
+}
+th , td{
+    padding: 5px;
+}
+.tab .upd{
+    /* width: 60%; */
+    background-color:#ffc107;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.tab .del{
+    /* width: 60%; */
+
+    background-color:#dc3545;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.hideBtn button{
+   
+    display: none;
+}
+
+
+
+  .tab {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  /* media query for screens smaller than 600px */
+  @media only screen and (max-width: 600px) {
+   
+  }
